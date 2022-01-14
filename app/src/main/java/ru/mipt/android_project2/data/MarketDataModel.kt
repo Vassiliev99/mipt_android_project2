@@ -1,18 +1,10 @@
 package ru.mipt.android_project2.data
 
-class CryptoDataModel {
-    var id: String? = null
+class MarketDataModel {
     var name: String? = null
-    var symbol: String? = null
+    var volume: String? = null
     var price: String? = null
-
-    fun idGet(): String {
-        return id.toString()
-    }
-
-    fun idSet(id: String) {
-        this.id = id
-    }
+    var asset: String? = null
 
     fun nameGet(): String {
         return name.toString()
@@ -22,12 +14,12 @@ class CryptoDataModel {
         this.name = name
     }
 
-    fun symbolGet(): String {
-        return symbol.toString()
+    fun volumeGet(): String {
+        return volume.toString()
     }
 
-    fun symbolSet(symbol: String) {
-        this.symbol = symbol
+    fun volumeSet(volume: String) {
+        this.volume = volume
     }
 
     fun priceGet(): String {
@@ -36,6 +28,14 @@ class CryptoDataModel {
 
     fun priceSet(price: String) {
         this.price = price
+    }
+
+    fun assetGet(): String {
+        return asset.toString()
+    }
+
+    fun assetSet(asset: String) {
+        this.asset = asset
     }
 
 }
